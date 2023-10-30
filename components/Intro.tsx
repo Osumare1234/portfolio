@@ -18,7 +18,7 @@ import { useActiveSectionContext, } from "@/context/active-section-context";
 
 export default function Intro () {
   const { ref } = useSectionInView("Home", 0.5);
-  const {  setTimeOfLastClick } = useActiveSectionContext();
+  const { setTimeOfLastClick } = useActiveSectionContext();
  
 
   
@@ -96,7 +96,7 @@ export default function Intro () {
      className="group bg-gray-900 text-white px-7 py-3 flex item-center
       gap-2 rounded-full outline-none focus:scale-110 hover-scale-110 hover-bg-gray-950 active:scale-105 transition"
       onClick={()=>{
-        ("Contact");
+        setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
         
       }}
