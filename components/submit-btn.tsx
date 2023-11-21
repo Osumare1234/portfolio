@@ -1,4 +1,4 @@
-
+"use client"
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { useFormStatus as useFormStatus } from "react-dom";
